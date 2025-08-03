@@ -196,14 +196,239 @@
             padding-bottom: 1rem;
         }
 
+        /* 深色主题样式 */
+        [data-theme="dark"] {
+            color-scheme: dark;
+        }
+
+        [data-theme="dark"] body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] body::before {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+        }
+
+        [data-theme="dark"] .card {
+            background: rgba(30, 41, 59, 0.95);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .table-responsive {
+            background: rgba(30, 41, 59, 0.9);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .table-responsive th {
+            background: linear-gradient(135deg, #334155 0%, #475569 100%);
+            color: #f1f5f9;
+        }
+
+        [data-theme="dark"] .table-responsive td {
+            color: #e2e8f0;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        [data-theme="dark"] .table-responsive tbody tr:hover {
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        [data-theme="dark"] .form-control {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .form-control:focus {
+            background: rgba(30, 41, 59, 0.9);
+            border-color: #6366f1;
+            box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+        }
+
+        [data-theme="dark"] .form-control::placeholder {
+            color: #94a3b8;
+        }
+
+        [data-theme="dark"] .btn-outline-secondary {
+            color: #e2e8f0;
+            border-color: rgba(148, 163, 184, 0.3);
+        }
+
+        [data-theme="dark"] .btn-outline-secondary:hover {
+            background: rgba(148, 163, 184, 0.1);
+            border-color: rgba(148, 163, 184, 0.5);
+            color: #f1f5f9;
+        }
+
+        [data-theme="dark"] .text-muted {
+            color: #94a3b8 !important;
+        }
+
+        [data-theme="dark"] .border {
+            border-color: rgba(148, 163, 184, 0.2) !important;
+        }
+
+        [data-theme="dark"] .bg-light {
+            background-color: rgba(30, 41, 59, 0.5) !important;
+        }
+
+        [data-theme="dark"] .text-dark {
+            color: #e2e8f0 !important;
+        }
+
+        [data-theme="dark"] .alert-info {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.2);
+            color: #93c5fd;
+        }
+
+        [data-theme="dark"] .modal-content {
+            background: rgba(30, 41, 59, 0.95);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .modal-header {
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        [data-theme="dark"] .modal-footer {
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        [data-theme="dark"] .close {
+            color: #e2e8f0;
+            opacity: 0.8;
+        }
+
+        [data-theme="dark"] .close:hover {
+            color: #f1f5f9;
+            opacity: 1;
+        }
+
+        [data-theme="dark"] .btn-ghost {
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .btn-ghost:hover {
+            background: rgba(148, 163, 184, 0.1);
+            color: #f1f5f9;
+        }
+
+        [data-theme="dark"] .tooltip {
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .select {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(148, 163, 184, 0.2);
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .select:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+        }
+
+        [data-theme="dark"] .bg-gray-50 {
+            background: rgba(30, 41, 59, 0.3) !important;
+        }
+
+        [data-theme="dark"] .bg-gray-100 {
+            background: rgba(30, 41, 59, 0.5) !important;
+        }
+
+        [data-theme="dark"] .bg-gray-200 {
+            background: rgba(30, 41, 59, 0.7) !important;
+        }
+
+        [data-theme="dark"] .text-gray-700 {
+            color: #cbd5e1 !important;
+        }
+
+        [data-theme="dark"] .text-gray-800 {
+            color: #e2e8f0 !important;
+        }
+
+        [data-theme="dark"] .border-gray-200 {
+            border-color: rgba(148, 163, 184, 0.2) !important;
+        }
+
+        [data-theme="dark"] .bg-white {
+            background: rgba(30, 41, 59, 0.8) !important;
+        }
+
+        [data-theme="dark"] .hover\:bg-gray-50:hover {
+            background: rgba(30, 41, 59, 0.9) !important;
+        }
+
+        [data-theme="dark"] .text-blue-600 {
+            color: #60a5fa !important;
+        }
+
+        [data-theme="dark"] .bg-green-100 {
+            background: rgba(34, 197, 94, 0.1) !important;
+        }
+
+        [data-theme="dark"] .text-green-600 {
+            color: #4ade80 !important;
+        }
+
+        /* 深色主题下的骨架屏样式 */
+        [data-theme="dark"] .animate-pulse .bg-gray-200 {
+            background: rgba(148, 163, 184, 0.2) !important;
+        }
+
+        [data-theme="dark"] .animate-pulse .bg-gray-100 {
+            background: rgba(148, 163, 184, 0.1) !important;
+        }
+
+        /* 深色主题下的表格样式 */
+        [data-theme="dark"] .table-zebra tbody tr:nth-child(even) {
+            background: rgba(30, 41, 59, 0.3);
+        }
+
+        [data-theme="dark"] .table-zebra tbody tr:nth-child(odd) {
+            background: rgba(30, 41, 59, 0.1);
+        }
+
+        /* 深色主题下的折叠面板样式 */
+        [data-theme="dark"] .collapse {
+            background: rgba(30, 41, 59, 0.5);
+            border-color: rgba(148, 163, 184, 0.2);
+        }
+
+        [data-theme="dark"] .collapse-title {
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .collapse-content {
+            color: #cbd5e1;
+        }
+
+        [data-theme="dark"] .list-disc li {
+            color: #cbd5e1;
+        }
+
         /* 移动端响应式样式 */
         /* 现代化输入框样式 */
         .input, .select, .textarea {
             border-radius: 12px;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             transition: var(--transition-smooth);
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .input::placeholder, .textarea::placeholder {
+            color: #6b7280;
             font-weight: 500;
         }
 
@@ -233,11 +458,12 @@
             position: absolute;
             left: 1rem;
             top: 1rem;
-            color: #6b7280;
+            color: #374151;
             font-size: 1rem;
             transition: var(--transition-smooth);
             pointer-events: none;
             background: transparent;
+            font-weight: 600;
         }
 
         .floating-label input:focus + label,
@@ -857,10 +1083,10 @@
                         使用步骤
                     </div>
                     <div class="collapse-content">
-                        <ul class="list-disc list-inside space-y-1">
-                            <li>1.将群聊二维码拖动或点击上传到二维码识别区域，即可自动识别二维码，并自动填充到目标URL输入框</li>
-                            <li>2.在目标URL输入框中输入群聊的名称、短链的名称，选择过期时间或者不设置过期时间，点击添加短链二维码</li>
-                            <li>3.在下方管理面板中可以看到已经添加的短链二维码，可以编辑、删除已创建的短链，并可查看或下载对应二维码</li>
+                        <ul class="list-disc list-inside space-y-2 text-gray-800">
+                            <li class="font-medium">1.将群聊二维码拖动或点击上传到二维码识别区域，即可自动识别二维码，并自动填充到目标URL输入框</li>
+                            <li class="font-medium">2.在目标URL输入框中输入群聊的名称、短链的名称，选择过期时间或者不设置过期时间，点击添加短链二维码</li>
+                            <li class="font-medium">3.在下方管理面板中可以看到已经添加的短链二维码，可以编辑、删除已创建的短链，并可查看或下载对应二维码</li>
                         </ul>
                     </div>
                 </div>
@@ -870,10 +1096,10 @@
                         注意事项
                     </div>
                     <div class="collapse-content">
-                        <ul class="list-disc list-inside space-y-1">
-                            <li>1.短链名只能包含字母、数字、下划线和横线</li>
-                            <li>2.可以设置短链的过期时间，不设置则永久有效</li>
-                            <li>3.如果过期会自动通过邮件通知</li>
+                        <ul class="list-disc list-inside space-y-2 text-gray-800">
+                            <li class="font-medium">1.短链名只能包含字母、数字、下划线和横线</li>
+                            <li class="font-medium">2.可以设置短链的过期时间，不设置则永久有效</li>
+                            <li class="font-medium">3.如果过期会自动通过邮件通知</li>
                         </ul>
                     </div>
                 </div>
@@ -902,8 +1128,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-lg font-semibold text-gray-700">点击上传或拖拽二维码图片</p>
-                                <p class="text-sm text-gray-500 mt-1">支持 PNG、JPG、JPEG 格式</p>
+                                <p class="text-lg font-semibold text-gray-800">点击上传或拖拽二维码图片</p>
+                                <p class="text-sm text-gray-700 mt-1 font-medium">支持 PNG、JPG、JPEG 格式</p>
                             </div>
                         </div>
                         <input type="file" id="qr-file" accept="image/*" class="hidden">
@@ -916,7 +1142,7 @@
                                 </svg>
                                 识别成功
                             </h3>
-                            <p class="text-sm text-gray-600 mb-2">已自动填充到右侧表单</p>
+                            <p class="text-sm text-gray-700 mb-2 font-medium">已自动填充到右侧表单</p>
                             <p id="decoded-text" class="font-mono text-sm bg-gray-100 p-3 rounded-lg break-all"></p>
                             <div class="card-actions justify-end mt-4">
                                 <button id="copy-btn" class="btn btn-success btn-sm gap-2">
@@ -961,7 +1187,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold text-gray-800">启用该短链</p>
-                                        <p class="text-sm text-gray-500">禁用后访问短链将返回404</p>
+                                        <p class="text-sm text-gray-700 font-medium">禁用后访问短链将返回404</p>
                                     </div>
                                 </div>
                                 <input type="checkbox" id="newEnabled" class="toggle toggle-primary" checked>
@@ -976,7 +1202,7 @@
                                     </div>
                                     <div>
                                         <p class="font-semibold text-gray-800">微信二维码</p>
-                                        <p class="text-sm text-gray-500">使用活码页面展示原二维码</p>
+                                        <p class="text-sm text-gray-700 font-medium">使用活码页面展示原二维码</p>
                                     </div>
                                 </div>
                                 <input type="checkbox" id="newIsWechat" class="toggle toggle-primary">
@@ -1031,7 +1257,7 @@
 
             <div id="loading" class="flex flex-col items-center justify-center py-12 hidden">
                 <div class="loading-spinner mb-4"></div>
-                <p class="text-gray-500 font-medium">加载中...</p>
+                <p class="text-gray-700 font-semibold">加载中...</p>
             </div>
 
             <div class="overflow-x-auto table-responsive">
@@ -1068,11 +1294,11 @@
                 <table class="table table-zebra w-full">
                     <thead>
                         <tr>
-                            <th class="w-[15%]">条目名称</th>
-                            <th class="w-[12%]">短链名</th>
-                            <th class="w-[28%]">目标 URL</th>
-                            <th class="w-[15%]">有效日期</th>
-                            <th class="w-[30%]">状态</th>
+                            <th class="w-[15%] text-gray-800 font-bold">条目名称</th>
+                            <th class="w-[12%] text-gray-800 font-bold">短链名</th>
+                            <th class="w-[28%] text-gray-800 font-bold">目标 URL</th>
+                            <th class="w-[15%] text-gray-800 font-bold">有效日期</th>
+                            <th class="w-[30%] text-gray-800 font-bold">状态</th>
                         </tr>
                     </thead>
                     <tbody id="mappingsTableBody">
@@ -1081,7 +1307,7 @@
             </div>
             <div class="flex flex-col lg:flex-row justify-between items-center mt-8 gap-6 p-4 bg-gray-50 rounded-xl">
                 <div class="flex items-center gap-3">
-                    <span class="text-sm font-medium text-gray-600">每页显示:</span>
+                    <span class="text-sm font-semibold text-gray-800">每页显示:</span>
                     <select id="pageSize" class="select select-bordered select-sm bg-white">
                         <option value="10">10 条</option>
                         <option value="20">20 条</option>
@@ -1098,9 +1324,9 @@
                     </button>
 
                     <div class="flex items-center gap-2 px-4 py-2 bg-white rounded-lg border border-gray-200">
-                        <span class="text-sm text-gray-600">第</span>
+                        <span class="text-sm text-gray-800 font-medium">第</span>
                         <span id="currentPage" class="font-bold text-blue-600">1</span>
-                        <span class="text-sm text-gray-600">页</span>
+                        <span class="text-sm text-gray-800 font-medium">页</span>
                     </div>
 
                     <button id="nextPage" class="btn btn-sm gap-2 bg-white border-gray-200 hover:bg-gray-50">
@@ -1116,12 +1342,12 @@
 
     <footer class="mt-8 mb-4 bg-base-200/80 backdrop-blur py-4">
         <div class="footer-links" style="margin: 20px 0 10px 0; text-align: center;">
-            <a href="https://tv.zymn.cc" target="_blank" style="margin: 0 12px; color: #bdbdbd; text-decoration: none; font-weight: 500;">免费电影</a>
-            <a href="https://sl.zymn.cc" target="_blank" style="margin: 0 12px; color: #bdbdbd; text-decoration: none; font-weight: 500;">短链生成器</a>
-            <a href="https://yhjf.zymn.cc" target="_blank" style="margin: 0 12px; color: #bdbdbd; text-decoration: none; font-weight: 500;">隐秘信使</a>
+            <a href="https://tv.zymn.cc" target="_blank" style="margin: 0 12px; color: #6b7280; text-decoration: none; font-weight: 600;">免费电影</a>
+            <a href="https://sl.zymn.cc" target="_blank" style="margin: 0 12px; color: #6b7280; text-decoration: none; font-weight: 600;">短链生成器</a>
+            <a href="https://yhjf.zymn.cc" target="_blank" style="margin: 0 12px; color: #6b7280; text-decoration: none; font-weight: 600;">隐秘信使</a>
         </div>
-        <div class="footer-content" style="text-align: center; color: #bdbdbd;">
-            <a href="https://www.youtube.com/channel/UCn0Yarp_h6oqn1-QLvlgbDg?sub_confirmation=1" target="_blank" rel="nofollow noopener"><span>Youtube</span></a>- <a href="https://twitter.com/spatacus1986" target="_blank" rel="nofollow noopener"><span>Twitter</span></a>- <a href="https://t.me/+8W45Y29o5T1mMGI1" target="_blank" rel="nofollow noopener"><span>电报群</span></a>- <a href="https://v.douyin.com/iNpPYY4E/" target="_blank" rel="nofollow noopener"><span>抖音</span></a>- <a href="https://www.ixigua.com/home/103680436540" target="_blank" rel="nofollow noopener"><span>西瓜视频</span></a>
+        <div class="footer-content" style="text-align: center; color: #6b7280; font-weight: 600;">
+            <a href="https://www.youtube.com/channel/UCn0Yarp_h6oqn1-QLvlgbDg?sub_confirmation=1" target="_blank" rel="nofollow noopener" style="color: #6b7280; text-decoration: none; font-weight: 600;"><span>Youtube</span></a>- <a href="https://twitter.com/spatacus1986" target="_blank" rel="nofollow noopener" style="color: #6b7280; text-decoration: none; font-weight: 600;"><span>Twitter</span></a>- <a href="https://t.me/+8W45Y29o5T1mMGI1" target="_blank" rel="nofollow noopener" style="color: #6b7280; text-decoration: none; font-weight: 600;"><span>电报群</span></a>- <a href="https://v.douyin.com/iNpPYY4E/" target="_blank" rel="nofollow noopener" style="color: #6b7280; text-decoration: none; font-weight: 600;"><span>抖音</span></a>- <a href="https://www.ixigua.com/home/103680436540" target="_blank" rel="nofollow noopener" style="color: #6b7280; text-decoration: none; font-weight: 600;"><span>西瓜视频</span></a>
         </div>
     </footer>
 
